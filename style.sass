@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap')
+
+$orange: hsl(31, 77%, 52%)
+$cyan: hsl(184, 100%, 22%)
+$dark-cyan: hsl(179, 100%, 13%)
+$light-grey: hsl(0, 0%, 95%)
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box    
+
+body
+    font-family: 'Lexend Deca', sans-serif    
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    word-spacing: 2px
+    line-height: 1.6
+
+a
+    text-decoration: none
+    color: $light-grey
+    background-color: $light-grey
+    padding: 10px 30px 10px 30px
+    border-radius: 40px
+    font-size: 15px
+
+h1
+    font-family: 'Big Shoulders Display', cursive    
+    color: $light-grey
+    padding: 20px 0px 20px 0px
+
+p
+    font-size: 15px    
+    color: hsla(0, 0%, 100%, 0.75)
+    padding-bottom: 80px
+
+.container
+    display: flex
+    flex-direction: row
+    overflow: hidden
+    width: 900px
+    border-radius: 7px
+
+.column
+    padding: 50px 40px 50px 40px
+
+#sedans
+    background-color: $orange
+
+#suvs
+    background-color: $cyan
+
+#luxury
+    background-color: $dark-cyan            
+
+#sedans > a 
+    color: $orange
+
+#suvs > a 
+    color: $cyan
+
+#luxury > a 
+    color: $dark-cyan    
+
+#button1:active, #button1:hover
+    background-color: $orange
+    border: solid 1px $light-grey
+    color: $light-grey
+
+#button2:active, #button2:hover
+    background-color: $cyan
+    border: solid 1px $light-grey
+    color: $light-grey
+
+#button3:active, #button3:hover
+    background-color: $dark-cyan
+    border: solid 1px $light-grey
+    color: $light-grey
+
+@media (max-width: 690px)
+    body
+        height: auto
+    .container
+        flex-direction: column
+        width: 350px
+        margin: 20px

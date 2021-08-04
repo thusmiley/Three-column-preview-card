@@ -1,1 +1,119 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  word-spacing: 2px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #f2f2f2;
+  background-color: #f2f2f2;
+  padding: 10px 30px 10px 30px;
+  border-radius: 40px;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  color: #f2f2f2;
+  padding: 20px 0px 20px 0px;
+}
+
+p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  padding-bottom: 80px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  width: 900px;
+  border-radius: 7px;
+}
+
+.column {
+  padding: 50px 40px 50px 40px;
+}
+
+#sedans {
+  background-color: #e38826;
+}
+
+#suvs {
+  background-color: #006970;
+}
+
+#luxury {
+  background-color: #004241;
+}
+
+#sedans > a {
+  color: #e38826;
+}
+
+#suvs > a {
+  color: #006970;
+}
+
+#luxury > a {
+  color: #004241;
+}
+
+#button1:active, #button1:hover {
+  background-color: #e38826;
+  border: solid 1px #f2f2f2;
+  color: #f2f2f2;
+}
+
+#button2:active, #button2:hover {
+  background-color: #006970;
+  border: solid 1px #f2f2f2;
+  color: #f2f2f2;
+}
+
+#button3:active, #button3:hover {
+  background-color: #004241;
+  border: solid 1px #f2f2f2;
+  color: #f2f2f2;
+}
+
+@media (max-width: 690px) {
+  body {
+    height: auto;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 350px;
+    margin: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
